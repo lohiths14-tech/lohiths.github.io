@@ -1,7 +1,10 @@
 {
   "version": 2,
-  "public": true,
   "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    },
     {
       "src": "**/*.html",
       "use": "@vercel/static"
@@ -12,5 +15,6 @@
       "src": "/(.*)",
       "dest": "/$1"
     }
-  ]
+  ],
+  "outputDirectory": "."
 }
