@@ -1,0 +1,17 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Lohith S - AI/ML Student Portfolio",
+  "main": "script.js",
+  "scripts": {
+    "start": "serve .",
+    "build": "echo 'Build completed'",
+    "deploy": "echo 'Ready for deployment to GitHub Pages or Netlify'"
+  },
+  "keywords": ["portfolio", "AI", "ML", "Data Science", "Python", "JavaScript"],
+  "author": "Lohith S",
+  "license": "ISC",
+  "devDependencies": {
+    "serve": "^14.2.5"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Lohith S Portfolio",
+  "short_name": "Lohith Portfolio",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#081b29",
+  "theme_color": "#00abf0",
+  "description": "Portfolio of Lohith S, AI/ML Student",
+  "icon": "profile.jpg"
+}
