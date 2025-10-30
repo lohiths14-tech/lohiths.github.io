@@ -15,9 +15,19 @@
     --bg-color: #081b29;
     --second-bg-color: #112e42;
     --text-color: #ededed;
+    --body-text-color: #e8f1fc;
     --main-color: #00abf0;
     --neon-color: #00f0ff;
     --accent-color: #ff2a6d;
+}
+
+body,
+p, label, li, .contact form input, .contact form textarea {
+    color: var(--body-text-color);
+}
+
+h1, h2, h3, h4, h5, h6, nav a, .logo, .footer-text p {
+    color: var(--text-color);
 }
 
 /* Particles.js background */
@@ -1769,4 +1779,36 @@ section {
 .projects-card:hover {
     transform: translateY(-1rem);
     box-shadow: 0 0 2rem var(--main-color);
+}
+
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: 0;
+    background: #fff;
+    color: #081b29;
+    padding: 8px 16px;
+    z-index: 10000;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    outline: 2px solid var(--main-color);
+    box-shadow: 0 0 0 4px #00abf0cc;
+    transition: left 0.2s;
+}
+.skip-link:focus {
+    left: 12px;
+}
+
+/* Strong focus state for all interactive elements */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus,
+[tabindex="0"]:focus {
+    outline: 3px solid var(--main-color);
+    outline-offset: 2px;
+    box-shadow: 0 0 6px 2px var(--main-color);
+    z-index: 1;
 }

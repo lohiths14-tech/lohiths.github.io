@@ -16,6 +16,7 @@
     <link rel="icon" type="image/x-icon" href="profile.jpg">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <!-- Preloader -->
     <div class="preloader">
         <div class="loader">
@@ -29,22 +30,22 @@
     
     <!-- header design -->
     <header class="header">
-        <a href="#" class="logo">Lohith.</a>
+        <a href="#" class="logo" aria-label="Homepage">Lohith.</a>
 
         <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#home" class="active" aria-label="Home section">Home</a>
+            <a href="#about" aria-label="About me section">About</a>
+            <a href="#education" aria-label="Education section">Education</a>
+            <a href="#skills" aria-label="Skills section">Skills</a>
+            <a href="#projects" aria-label="Projects section">Projects</a>
+            <a href="#contact" aria-label="Contact form section">Contact</a>
         </nav>
 
         <div class="bx bx-menu" id="menu-icon"></div>
     </header>
 
     <!-- home section design -->
-    <section class="home" id="home">
+    <section class="home" id="home" tabindex="-1" aria-label="Main content"  id="main-content">
         <div class="home-content">
             <h3>Hello, It's Me</h3>
             <h1>Lohith S</h1>
@@ -57,9 +58,9 @@
         </div>
 
         <div class="home-sci">
-            <a href="https://www.linkedin.com/in/lohith-s-3ba5062ab/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/lohiths14-tech" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github'></i></a>
-            <a href="mailto:lohiths7788@gmail.com"><i class='bx bx-envelope'></i></a>
+            <a href="https://www.linkedin.com/in/lohith-s-3ba5062ab/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/lohiths14-tech" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><i class='bx bxl-github'></i></a>
+            <a href="mailto:lohiths7788@gmail.com" aria-label="Email Lohith"><i class='bx bx-envelope'></i></a>
         </div>
 
         <div class="home-img">
@@ -272,13 +273,15 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="#" id="contact-form">
+        <form action="https://formspree.io/f/your-form-id" method="POST"> <!-- Replace with your real Formspree endpoint -->
             <div class="input-box">
                 <div class="input-field">
+                    <label for="name" class="visually-hidden">Full Name</label>
                     <input type="text" placeholder="Full Name" id="name" required>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
+                    <label for="email" class="visually-hidden">Email Address</label>
                     <input type="email" placeholder="Email Address" id="email" required>
                     <span class="focus"></span>
                 </div>
@@ -286,16 +289,19 @@
 
             <div class="input-box">
                 <div class="input-field">
+                    <label for="phone" class="visually-hidden">Mobile Number</label>
                     <input type="tel" placeholder="Mobile Number" id="phone">
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
+                    <label for="subject" class="visually-hidden">Email Subject</label>
                     <input type="text" placeholder="Email Subject" id="subject" required>
                     <span class="focus"></span>
                 </div>
             </div>
 
             <div class="textarea-field">
+                <label for="message" class="visually-hidden">Your Message</label>
                 <textarea cols="30" rows="10" placeholder="Your Message" id="message" required></textarea>
                 <span class="focus"></span>
             </div>

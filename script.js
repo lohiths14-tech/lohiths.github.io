@@ -56,36 +56,36 @@ if (typeof Typed !== 'undefined') {
     });
 }
 
-// Contact form functionality
-document.getElementById('contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
+// Contact form functionality -- removed for Formspree integration
+// document.getElementById('contact-form').addEventListener('submit', function(e) {
+//     e.preventDefault();
     
-    // Get form values
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const phone = document.getElementById('phone').value;
-    const subject = document.getElementById('subject').value;
-    const message = document.getElementById('message').value;
+//     // Get form values
+//     const name = document.getElementById('name').value;
+//     const email = document.getElementById('email').value;
+//     const phone = document.getElementById('phone').value;
+//     const subject = document.getElementById('subject').value;
+//     const message = document.getElementById('message').value;
     
-    // Basic validation
-    if(name && email && subject && message) {
-        // Show success animation
-        const submitBtn = this.querySelector('.btn');
-        const originalText = submitBtn.textContent;
-        submitBtn.textContent = 'Sending...';
-        submitBtn.disabled = true;
+//     // Basic validation
+//     if(name && email && subject && message) {
+//         // Show success animation
+//         const submitBtn = this.querySelector('.btn');
+//         const originalText = submitBtn.textContent;
+//         submitBtn.textContent = 'Sending...';
+//         submitBtn.disabled = true;
         
-        // Simulate sending (in a real app, you would send to a server)
-        setTimeout(() => {
-            alert(`Thank you ${name} for your message! I will get back to you soon at ${email}.`);
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
-            this.reset();
-        }, 1500);
-    } else {
-        alert('Please fill in all required fields.');
-    }
-});
+//         // Simulate sending (in a real app, you would send to a server)
+//         setTimeout(() => {
+//             alert(`Thank you ${name} for your message! I will get back to you soon at ${email}.`);
+//             submitBtn.textContent = originalText;
+//             submitBtn.disabled = false;
+//             this.reset();
+//         }, 1500);
+//     } else {
+//         alert('Please fill in all required fields.');
+//     }
+// });
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
